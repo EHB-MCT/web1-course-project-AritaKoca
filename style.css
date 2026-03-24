@@ -1,0 +1,51 @@
+body {
+	margin: 0;
+	background-color: #181818;
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+	background-image: url(images/@jixnly.jpg);
+	background-position: top right;
+}
+
+header {
+	height: 5000px;
+}
+
+.navigation {
+	width: calc(100% - 10px);
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	padding-left: 200px;
+	position: fixed;
+	background-image: url(images/header.svg);
+	background-repeat: repeat-x;
+}
+
+.navigation li {
+	display: inline;
+	padding-right: 100px;
+}
+.navigation h1 {
+	font-size: 70px;
+}
+.navigation p {
+	font-size: 50px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	color: white;
+	padding-left: 350px;
+}
+
+.logo p {
+	padding-left: 10px;
+	padding-top: 15px;
+}
