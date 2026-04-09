@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Momo+Signature&display=swap");
+
 body {
 	margin: 0;
 	background-color: #181818;
@@ -6,7 +8,7 @@ body {
 	font-weight: 500;
 	font-style: normal;
 	font-variation-settings: "wdth" 100;
-	background-image: url(images/@jixnly.jpg);
+	background-image: url(images/pink_rice.png);
 	background-position: top right;
 }
 
@@ -16,12 +18,12 @@ header {
 
 .navigation {
 	width: calc(100% - 10px);
-	height: 200px;
+	height: 190px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px;
-	padding-left: 200px;
+	padding: 5px;
+	padding-left: 50px;
 	position: fixed;
 	background-image: url(images/header.svg);
 	background-repeat: repeat-x;
@@ -30,6 +32,8 @@ header {
 .navigation li {
 	display: inline;
 	padding-right: 100px;
+	text-decoration: none;
+	color: #fff;
 }
 .navigation h1 {
 	font-size: 70px;
@@ -42,10 +46,20 @@ header {
 	display: flex;
 	align-items: center;
 	color: white;
-	padding-left: 350px;
+	padding-left: 450px;
+	font-family: "Abril Fatface", serif;
+	font-weight: 100;
+	font-style: normal;
 }
 
 .logo p {
 	padding-left: 10px;
 	padding-top: 15px;
+	font-family: "Dancing Script", cursive;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
+
+/*font arita too big
+how to link pages to ul*/
