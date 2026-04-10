@@ -13,7 +13,7 @@ body {
 }
 
 header {
-	height: 5000px;
+	height: 50000px; /*size of site*/
 }
 
 .navigation {
@@ -23,7 +23,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 5px;
-	padding-left: 50px;
+	padding-left: 45px;
 	position: fixed;
 	background-image: url(images/header.svg);
 	background-repeat: repeat-x;
@@ -31,35 +31,82 @@ header {
 
 .navigation li {
 	display: inline;
-	padding-right: 100px;
-	text-decoration: none;
-	color: #fff;
+	padding-right: 80px;
 }
+
+.navigation a {
+	color: #efdfdf;
+	text-decoration: none;
+	font-family: "Abril Fatface", serif;
+	font-size: 20px;
+}
+
+.navigation a:hover {
+	color: #e8b7c3;
+	text-decoration: underline;
+}
+
 .navigation h1 {
 	font-size: 70px;
-}
-.navigation p {
-	font-size: 50px;
 }
 
 .logo {
 	display: flex;
 	align-items: center;
-	color: white;
+	color: #efdfdf;
 	padding-left: 450px;
 	font-family: "Abril Fatface", serif;
-	font-weight: 100;
 	font-style: normal;
+	padding-bottom: 25px;
 }
-
+.logo h1 {
+	font-weight: 100;
+}
 .logo p {
 	padding-left: 10px;
 	padding-top: 15px;
 	font-family: "Dancing Script", cursive;
 	font-optical-sizing: auto;
-	font-weight: 400;
+	font-weight: 500;
 	font-style: normal;
+	font-size: 50px;
 }
 
-/*font arita too big
-how to link pages to ul*/
+header {
+	padding-top: 200px;
+	font-size: 70px;
+	margin-left: 50px;
+}
+
+.intro p {
+	/*intro text deco*/
+	font-size: 25px;
+	font-family: "Abril Fatface", serif;
+	margin-top: 100px;
+	margin-left: -230px;
+	margin-right: 50px;
+}
+
+.intro h2 {
+	font-family: "Dancing Script", cursive;
+	font-size: 50px;
+	font-weight: bolder;
+	margin-bottom: 30px;
+	text-decoration: underline;
+	margin-top: -200px;
+	margin-left: 30px;
+}
+.intro {
+	display: flex;
+	align-items: center;
+}
+
+.intro img {
+	width: 15%;
+	height: 15%;
+	margin-top: 30px;
+}
+
+/*
+how to link pages to ul
+*/
