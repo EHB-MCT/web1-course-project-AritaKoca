@@ -12,6 +12,10 @@ body {
 	background-position: top right;
 }
 
+.navigation a {
+	text-decoration: none;
+}
+
 header {
 	height: 500px; /*size of site*/
 }
@@ -31,7 +35,7 @@ header {
 
 .navigation li {
 	display: inline;
-	padding-right: 50px;
+	padding-right: 70px;
 }
 
 .navigation nav a {
@@ -54,16 +58,16 @@ header {
 	display: flex;
 	align-items: center;
 	color: #efdfdf;
-	padding-left: 10px;
 	font-family: "Abril Fatface", serif;
 	font-style: normal;
 	padding-bottom: 25px;
 }
 .logo h1 {
-	font-weight: 100;
+	font-weight: 10;
+	font-size: 60px;
 }
 .logo p {
-	padding-left: 1px;
+	padding-left: 10px;
 	padding-top: 15px;
 	font-family: "Dancing Script", cursive;
 	font-optical-sizing: auto;
@@ -102,6 +106,14 @@ header {
 	font-family: "Abril Fatface", serif;
 	max-width: 1150px;
 }
+.intro p2 {
+	font-size: 20px;
+	font-family: "Abril Fatface", serif;
+	font-weight: bolder;
+	margin-left: -250px;
+	margin-right: 200px;
+	margin-top: -40px;
+}
 
 .intro img {
 	width: 15%;
@@ -115,10 +127,10 @@ header {
 	font-size: 20px;
 	font-weight: lighter;
 	text-decoration: underline;
+	margin-bottom: 50px;
 }
 
 .drawings {
-	margin-left: 60px;
 }
 .drawings img {
 	width: 10%;
@@ -126,17 +138,14 @@ header {
 }
 
 .animations {
-	margin-left: 60px;
 }
 .crafts {
-	margin-left: 60px;
 }
 .crafts img {
 	width: 10%;
 	border-radius: 10px;
 }
 .designs {
-	margin-left: 60px;
 }
 .designs img {
 	width: 10%;
