@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Momo+Signature&display=swap");
 
-html,
-body {
-	font-family: "Roboto", sans-serif;
-	background-color: #04aa6d;
-	color: red;
-	scroll-behavior: smooth;
-}
 body {
 	margin: 0;
 	background-color: #181818;
@@ -20,7 +13,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 }
-.navbar {
+/* .navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -59,7 +52,7 @@ body {
 	background-color: aliceblue;
 	border-radius: 10px;
 	transition: all 0.3s;
-}
+} */
 /**/
 
 .navigation a {
@@ -190,7 +183,7 @@ header {
 	width: 20%;
 	border-radius: 10px;
 	margin-left: 10%;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 .drawings p {
 	margin-right: 50%;
@@ -198,7 +191,7 @@ header {
 }
 .animations img {
 	width: 30%;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 	margin-left: 10%;
 }
 .animations p {
@@ -208,7 +201,7 @@ header {
 	width: 30%;
 	border-radius: 10px;
 	margin-left: 10%;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 }
 .crafts p {
 	margin-right: 50%;

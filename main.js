@@ -1,5 +1,5 @@
-const hamMenu = document.querySelector("burgerButton");
-const offScreenMenu = document.querySelector(".navbar-links ul");
+const burgerButton = document.querySelector("burgerButton");
+const navbarLinks = document.querySelector(".navbar-links ul");
 
 burgerButton.addEventListener("click", () => {
 	navbarLinks.classList.toggle("active");
