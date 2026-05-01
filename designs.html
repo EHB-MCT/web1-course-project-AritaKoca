@@ -43,15 +43,44 @@
 						⬩➤ In visual design classes, i've also learned how to design
 						proprely. I never knew it was someting that i liked doein,
 						especially because i like drawing more than typo. But i am enjoying
-						it up untill now.
+						it up untill now. I have also found out that I like doing 3D, i
+						always wanted to try it growing up and now i finally got the chance
+						too!
 					</p>
 					<img src="images/designs/sem.jpg" alt="" />
 					<img src="images/designs/sem11.png" alt="" />
 					<img src="images/designs/sem12.png" alt="" />
 					<img src="images/designs/sem2.png" alt="" />
 					<img src="images/designs/avp.png" alt="" />
+
+					<img src="images/designs/room.png" alt="" />
+					<img src="images/designs/kist.png" alt="" />
+					<img src="images/designs/lichtstudie.png" alt="" />
+					<img src="images/designs/shape.png" alt="" />
+				</div>
+				<!-- Hamburger icon (only visible < 768px via CSS) -->
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
 			</div>
+			<!-- Mobile dropdown menu -->
+			<div class="mobile-menu">
+				<a href="drawings.html">☆Drawings.⊹ ࣪ ˖</a>
+				<a href="animations.html">☆Animations.⊹ ࣪ ˖</a>
+				<a href="crafts.html">☆Crafts.⊹ ࣪ ˖</a>
+				<a href="designs.html">☆Design.⊹ ࣪ ˖</a>
+			</div>
 		</header>
+		<script>
+			const hamburger = document.querySelector(".hamburger");
+			const mobileMenu = document.querySelector(".mobile-menu");
+
+			hamburger.addEventListener("click", () => {
+				mobileMenu.style.display =
+					mobileMenu.style.display === "flex" ? "none" : "flex";
+			});
+		</script>
 	</body>
 </html>

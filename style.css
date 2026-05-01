@@ -13,46 +13,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 }
-/* .navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: aqua;
-	padding: 15px 20px;
-}
-.brand-title {
-	font-family: "Roboto", sans-serif;
-	color: red;
-}
-.navbar-links ul {
-	list-style: none;
-	display: flex;
-}
-.navbar-links li {
-	padding: 0 15px;
-}
-.navbar-links a {
-	text-decoration: none;
-	color: #6200ff;
-	font-size: 1.2rem;
-	transition: color 0.3s;
-}
 
-.toggle-button {
-	display: none;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 30px;
-	height: 21px;
-	cursor: pointer;
-}
-.toggle-button .bar {
-	height: 3px;
-	width: 100%;
-	background-color: aliceblue;
-	border-radius: 10px;
-	transition: all 0.3s;
-} */
 /**/
 
 .navigation a {
@@ -88,6 +49,7 @@ header {
 	text-decoration: none;
 	font-family: "Abril Fatface", serif;
 	font-size: 20px;
+	display: inline-block;
 }
 
 .navigation nav a:hover {
@@ -172,11 +134,14 @@ header {
 	font-family: "Abril Fatface", serif;
 	font-size: 20px;
 	font-weight: lighter;
-	text-decoration: underline;
+	text-decoration: none;
 	margin-bottom: 50px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+.portfolio h3 {
+	text-decoration: underline;
 }
 
 .drawings img {
@@ -231,11 +196,59 @@ header {
 	scroll-margin-top: 200px;
 }
 
-/*ham menu doesnt show/ work
-underline doesnt get off on p
+.desktop-menu ul {
+	list-style: none;
+	display: flex;
+	gap: 40px;
+}
+
+.desktop-menu a {
+	color: #efdfdf;
+	font-family: "Abril Fatface", serif;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.hamburger {
+	display: none;
+	flex-direction: column;
+	gap: 6px;
+	cursor: pointer;
+}
+
+.hamburger span {
+	width: 30px;
+	height: 4px;
+	background: #efdfdf;
+	border-radius: 5px;
+}
+
+.mobile-menu {
+	display: none;
+	flex-direction: column;
+	background-color: #181818;
+	background-image: url(images/bl.jpg);
+	padding-top: 190px;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.mobile-menu a {
+	padding: 20px;
+	color: #efdfdf;
+	text-decoration: none;
+	font-family: "Abril Fatface", serif;
+	font-size: 22px;
+}
+
+/*
 line 53 transform: scale(0.8); doesnt work..........................................*/
 
 @media screen and (max-width: 768px) {
+	/* hide normal nav text */
 	.navigation li {
 		display: none;
 	}
@@ -243,18 +256,36 @@ line 53 transform: scale(0.8); doesnt work......................................
 	.navigation nav a {
 		display: none;
 	}
+	.portfolio li {
+		display: none;
+	}
+
+	.portfolio nav a {
+		display: none;
+	}
+
+	/* show hamburger */
+	.hamburger {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		position: absolute;
+		right: 80px;
+		top: 60px;
+		z-index: 99999; /*helped by ai*/
+	}
+
 	.logo h1 {
 		font-weight: 10;
-		font-size: 60px;
+		font-size: 50px;
 	}
 	.logo p {
-		padding-left: 1000px;
 		padding-top: 15px;
 		font-family: "Dancing Script", cursive;
 		font-optical-sizing: auto;
 		font-weight: 500;
 		font-style: normal;
-		font-size: 20px;
+		font-size: 30px;
 	}
 
 	.intro h2 {
@@ -326,70 +357,5 @@ line 53 transform: scale(0.8); doesnt work......................................
 	}
 	.designs p {
 		font-size: small;
-	}
-
-	/*ham menu........................................................................................................*/
-	/*.topnav {
-		overflow: hidden;
-		background-color: #6200ff;
-		position: relative;
-	}
-
-	/* Hide the links inside the navigation menu (except for logo/home) */
-	/*.topnav #myLinks {
-		display: none;
-	}
-
-	
-	.topnav a {
-		color: white;
-		padding: 14px 16px;
-		text-decoration: none;
-		font-size: 17px;
-		display: block;
-	}
-
-
-	.topnav a.icon {
-		background: pink;
-		display: block;
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-
-	.topnav a:hover {
-		background-color: #ddd;
-		color: red;
-	}
-
-	.active {
-		background-color: #04aa6d;
-		color: white;
-	}
-
-	*/
-
-	.navbar-links ul {
-		display: none;
-		flex-direction: column;
-		text-align: center;
-		width: 100%;
-		padding: 0;
-	}
-	.navbar-links ul.active {
-		display: block;
-	}
-	.toggle-button {
-		display: flex;
-	}
-	.navbar-links li {
-		padding: 15px 0;
-	}
-	.navbar {
-		flex-direction: column;
-	}
-	.navbar-links {
-		width: 100%;
 	}
 }

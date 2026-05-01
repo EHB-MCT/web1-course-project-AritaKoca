@@ -57,8 +57,34 @@
 					<img src="images/drawings/feleciano.png" alt="" />
 					<img src="images/drawings/oc.png" alt="" />
 					<img src="images/drawings/fit.png" alt="" />
+
+					<img src="images/drawings/eng.png" alt="" />
+					<img src="images/drawings/mil.png" alt="" />
+					<img src="images/drawings/kp.png" alt="" />
+				</div>
+				<!-- Hamburger icon (only visible < 768px via CSS) -->
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
 			</div>
+			<!-- Mobile dropdown menu -->
+			<div class="mobile-menu">
+				<a href="drawings.html">☆Drawings.⊹ ࣪ ˖</a>
+				<a href="animations.html">☆Animations.⊹ ࣪ ˖</a>
+				<a href="crafts.html">☆Crafts.⊹ ࣪ ˖</a>
+				<a href="designs.html">☆Design.⊹ ࣪ ˖</a>
+			</div>
 		</header>
+		<script>
+			const hamburger = document.querySelector(".hamburger");
+			const mobileMenu = document.querySelector(".mobile-menu");
+
+			hamburger.addEventListener("click", () => {
+				mobileMenu.style.display =
+					mobileMenu.style.display === "flex" ? "none" : "flex";
+			});
+		</script>
 	</body>
 </html>
