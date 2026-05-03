@@ -4,6 +4,7 @@ website url: http://127.0.0.1:5500/web1-course-project-AritaKoca/index.html
 
 Up & running:
 When you enter the website, you first see an introduction explaining what the site is about. When you click the buttons at the top of the page, you can view the pictures of the work I’ve made, and you can scroll to see them all. If you click on “Arita Portfolio,” you return to the home page with my introduction. The same applies to the mobile version, except you first need to open the hamburger menu to see the buttons.
+If the hamburger menu doesn't work or show up when in mobile mode, try clicking on 'Arita Portfolio', then it will normally show up and the page will be fixed.
 
 bronvermelding/ sources:
 video: https://www.w3schools.com/html/html5_video.asp used in animations.html and in designs.html
